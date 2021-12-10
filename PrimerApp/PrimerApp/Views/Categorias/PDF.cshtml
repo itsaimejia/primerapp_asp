@@ -1,0 +1,151 @@
+﻿@model PrimerApp.Models.Categoria
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ContactPDF</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: white;
+            color: silver;
+        }
+
+
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        ul {
+            white-space: nowrap;
+        }
+
+        ul, li {
+            list-style: none;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="row">
+            <ul>
+                <li><img src="https://www.gob.mx/cms/uploads/article/main_image/93606/educacion.jpeg" height="300" width="500"></li>
+                <li><img src="https://www.tecnm.mx/assets/files/main/img/pleca_tecnm.jpg?img=26"></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <p align="right"><b>No. Constancia:</b> @Model.id</p>
+    <p align="right"><b>Asunto:</b> @Model.Tipo</p>
+
+    <h4><b>A quien corresponda</b></h4>
+    <p>Por medio de la presente se hace constar la C.:</p>
+
+    <table dir="ltr">
+        <tr>
+            <td><b>NOMBRE: </b></td>
+            <td>@Model.Estado</td>
+        </tr>
+        <tr>
+            <td><b>RFC: </b></td>
+            <td>@Model.NombreCategoria</td>
+        </tr>
+        <tr>
+            <td><b>CURP:</b></td>
+            <td>ujhdkjashdkjas</td>
+        </tr>
+        <tr>
+            <td>
+                <b>
+                    CLAVE(S)<br />
+                    PRESUPUESTARIA(S):
+                </b>
+            </td>
+        </tr>
+        <tr>
+            <td><b>NOMBRAMIENTO: </b></td>
+            <td>dsfgdgdfghdfsghhf</td>
+        </tr>
+
+    </table>
+
+    <p align="justify">
+        Ha laborado en este Instituto como personal docente, teniendo antigüedad dentro del Sistema
+        Nacional de Educación Superior Tecnológica a partir del  lkdjlaskjdlka
+        a la fecha, (según documentos que obran en los archivos del Dpto. de Recursos Humanos de este Instituto).
+    </p>
+
+    <p align="justify">
+        Se extiende la presente Constancia en la Ciudad de Ensenada Baja California, para los fines
+        legales que a la interesada convengan, a los ocho días del mes de enero del año dos mil veinte.
+    </p>
+
+    <b>ATENTAMENTE</b>
+    <p>
+        <em>Excelencia en Educación Tecnológica</em><br>
+        <em>Por la Tecnología de hoy y del Futuro</em>
+    </p>
+
+
+    <p>
+        <b>
+            dfsdfsf <br>
+            sdfsdfsdf
+        </b>
+    </p>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+
+    <footer>
+        <p>
+            Blvd. Tecnológico #150, Ex Ejido Chapultepec, C.P. 22780, Ensenada, Baja California<br>
+            Tels. (646) 177 5680, 177 5682, (646) 177 5678 Ext. 4011<br>
+            email: <a href="mailto:rechumanos@ite.edu.mx">mailto:rechumanos@ite.edu.mx</a><br>
+
+            <a href="http://www.tecnm.mx/">http://www.tecnm.mx/  | ensenada.tecnm.mx</a>
+        </p>
+    </footer>
+
+</body>
+</html>
